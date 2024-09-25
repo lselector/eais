@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+eais.egg-info/PKG-INFO
+eais.egg-info/SOURCES.txt
+eais.egg-info/dependency_links.txt
+eais.egg-info/requires.txt
+eais.egg-info/top_level.txt
+mybag/__init__.py
+mybag/main.py
+myutils/__init__.py
+myutils/main.py
+util_jupyter/__init__.py
+util_jupyter/main.py
