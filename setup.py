@@ -2,8 +2,8 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='eais',
-    version='0.1',
+    name='levutils',
+    version='0.2',
     packages=find_packages(exclude=['tests*', 'doc*']),
     author='Lev Selector',
     author_email='lev.selector@gmail.com',

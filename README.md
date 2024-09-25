@@ -1,19 +1,19 @@
 # eais
 
-This "eais" package contains several common utilities modules
+The "levutils" package contains several common utilities modules
 
    ## Installation
 
 ``` 
-     pip install eais
+     pip install levutils
 ```
 
    ## Usage
 
 ``` python
-     import eais.mybag
-     import eais.myutils
-     import eais.util_jupyter
+     import levutils.mybag
+     import levutils.myutils
+     import levutils.util_jupyter
 ```
 
    ## License
