@@ -59,3 +59,20 @@ The slides page should show this google drive in a iFrame or some sort of sub-wi
 https://drive.google.com/drive/folders/1dmj00iilSP-JYmriMUUaHCKz5X54e3UX?ths=true
 
 ---------------
+===========================================================
+
+Please add content from this document to the website:
+
+https://docs.google.com/document/d/1wDFJX6y6y3KjFWFEgfRme8gyjnO1gEcRF86p64hhrLQ/edit?tab=t.0
+
+Note two more people - Vitalii and Sander.
+I have put their images into website/images directory
+
+Also attaching the PDF version of this document
+
+===========================================================
+Please re-arrange the panels on page "about.html"
+Make two people per row.
+So first row will be Lev Selector & Dmitry Borovikov
+and 2nd row will be Vitalii Stinskii & Sander Stepanov
+===========================================================
