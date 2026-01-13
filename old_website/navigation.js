@@ -1,19 +1,15 @@
-// Navigation functionality for eAIs website
+// Navigation functionality
 document.addEventListener('DOMContentLoaded', function() {
     // Get elements
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
     const navItems = document.querySelectorAll('.nav-links a');
-    const body = document.body;
     
     // Toggle mobile menu
     if (hamburger) {
-        hamburger.addEventListener('click', function(e) {
-            e.stopPropagation();
+        hamburger.addEventListener('click', function() {
             hamburger.classList.toggle('active');
             navLinks.classList.toggle('active');
-            // Prevent body scroll when menu is open
-            body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
         });
     }
     
@@ -23,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function() {
             if (hamburger && navLinks) {
                 hamburger.classList.remove('active');
                 navLinks.classList.remove('active');
-                body.style.overflow = '';
             }
         });
     });
@@ -46,26 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (!isClickInsideNav && !isClickOnHamburger && navLinks.classList.contains('active')) {
                 hamburger.classList.remove('active');
                 navLinks.classList.remove('active');
-                body.style.overflow = '';
             }
-        }
-    });
-    
-    // Close mobile menu on escape key
-    document.addEventListener('keydown', function(event) {
-        if (event.key === 'Escape' && navLinks && navLinks.classList.contains('active')) {
-            hamburger.classList.remove('active');
-            navLinks.classList.remove('active');
-            body.style.overflow = '';
-        }
-    });
-    
-    // Handle window resize - close menu if window becomes larger
-    window.addEventListener('resize', function() {
-        if (window.innerWidth > 768 && navLinks && navLinks.classList.contains('active')) {
-            hamburger.classList.remove('active');
-            navLinks.classList.remove('active');
-            body.style.overflow = '';
         }
     });
 });

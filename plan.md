@@ -1,19 +1,35 @@
 
 ## Plan to transition static website to add/update content automatically.
 
-- Step 1 - move it to CloudFlare Pages project
-- Step 2 - test python script to run locally from my laptop 
+- Step 1 - create a simple static website
+
+- Step 2 - add email forms to all pages
+
+- Step 3 - upload it to CloudFlare Pages project - and move DNS to it
+
+- Step 4 - test python script to get data from YouTube:
+  run locally from my laptop 
   using YouTube Data API + youtube-transcript-api
-  to extract metadata of videos in my YT channel (video date, URL, title, description, transcript)
-- Step 3 - improve script to extract metadata from specific video or by date range
-  and save into individual JSON files (create a separate directory for those files).
+  to extract metadata of videos in my YT channel 
+  (video date, URL, title, description, transcript)
+
+- Step 5 - improve script to extract metadata 
+  from specific video or by date range
+  and save into individual JSON files 
+  (create a separate directory for those files).
   Add option to pull only most recent metadata which was not pulled yet
-- Step 4 - write python script using Claude API to generate a nice MD file for each JSON file
-  and put them under website/inventory
-- Step 5 - create a website structure, images, menus
-  Step 6 - create a build script to populate the website from inventory
-  Step 7 - create an upload script to publish the website to CloudFlare
-  Step 8 - add email forms to all pages
+
+- Step 6 - write python script using Claude API 
+  to generate a nice MD file for each JSON file
+  and put them under website/content
+
+  Step 7 - create a build script to populate the website/blog from inventory
+  Make blog navigation
+
+  Step 8 - create an upload script to publish the website to CloudFlare
+
+
+=======================================================
 
 Below is a step-by-step guide to install and test both APIs 
 
