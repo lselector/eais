@@ -581,6 +581,28 @@ footer .social-links a {
     height: 24px;
 }
 
+/* Blog Article Styles */
+.date {
+    color: #888;
+    margin-bottom: 2rem;
+}
+
+.content-section ul {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.content-section h4 {
+    color: var(--primary-blue);
+    margin-top: 1.5rem;
+}
+
+/* CTA Button Container */
+.cta-container {
+    text-align: center;
+    margin-top: 2rem;
+}
+
 /* Responsive Design */
 @media (max-width: 992px) {
     .team-grid {

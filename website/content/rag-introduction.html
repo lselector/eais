@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introduction to RAG Systems - eAIs Blog</title>
-    <meta name="description" content="Learn how Retrieval-Augmented Generation (RAG) systems combine LLMs with your private data for intelligent question-answering.">
+    <meta name="description" content="Learn how RAG systems combine LLMs with your private data for intelligent question-answering.">
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
@@ -36,56 +36,98 @@
         <section class="content-section">
             <p><a href="../blog.html">← Back to Blog</a></p>
             <h2>Introduction to RAG Systems</h2>
-            <p class="date" style="color: #888; margin-bottom: 2rem;">January 2026</p>
+            <p class="date">January 2026</p>
             
-            <p>Retrieval-Augmented Generation (RAG) represents one of the most practical and powerful approaches to building AI systems that can work with your private data. In this article, we'll explore what RAG is, how it works, and why it's become essential for enterprise AI applications.</p>
+            <p>Retrieval-Augmented Generation (RAG) represents one of the 
+            most practical and powerful approaches to building AI systems 
+            that can work with your private data. In this article, we'll 
+            explore what RAG is, how it works, and why it's become 
+            essential for enterprise AI applications.</p>
 
             <h3>What is RAG?</h3>
-            <p>RAG is an AI architecture that combines the power of large language models (LLMs) with external knowledge retrieval. Instead of relying solely on the knowledge embedded in the model during training, RAG systems can access and use information from your own documents, databases, and knowledge bases.</p>
+            <p>RAG is an AI architecture that combines the power of large 
+            language models (LLMs) with external knowledge retrieval. 
+            Instead of relying solely on the knowledge embedded in the 
+            model during training, RAG systems can access and use 
+            information from your own documents, databases, and 
+            knowledge bases.</p>
             <p>This approach solves several critical problems:</p>
-            <ul style="margin-left: 2rem; margin-bottom: 1rem;">
-                <li><strong>Data Privacy:</strong> Your sensitive data never needs to be sent to external AI providers for training</li>
-                <li><strong>Up-to-date Information:</strong> The system can access current information, not just what was available during model training</li>
-                <li><strong>Domain Specificity:</strong> Answers are grounded in your actual documents and data</li>
-                <li><strong>Reduced Hallucinations:</strong> By grounding responses in retrieved documents, the system is less likely to generate incorrect information</li>
+            <ul>
+                <li><strong>Data Privacy:</strong> Your sensitive data 
+                never needs to be sent to external AI providers for 
+                training</li>
+                <li><strong>Up-to-date Information:</strong> The system 
+                can access current information, not just what was 
+                available during model training</li>
+                <li><strong>Domain Specificity:</strong> Answers are 
+                grounded in your actual documents and data</li>
+                <li><strong>Reduced Hallucinations:</strong> By grounding 
+                responses in retrieved documents, the system is less 
+                likely to generate incorrect information</li>
             </ul>
 
             <h3>How RAG Works</h3>
             <p>A typical RAG system consists of several key components:</p>
             
-            <h4 style="color: var(--primary-blue); margin-top: 1.5rem;">1. Document Processing</h4>
-            <p>Your documents are processed and split into smaller chunks. Each chunk is converted into a numerical representation called an "embedding" using an embedding model. These embeddings capture the semantic meaning of the text.</p>
+            <h4>1. Document Processing</h4>
+            <p>Your documents are processed and split into smaller chunks. 
+            Each chunk is converted into a numerical representation called 
+            an "embedding" using an embedding model. These embeddings 
+            capture the semantic meaning of the text.</p>
             
-            <h4 style="color: var(--primary-blue); margin-top: 1.5rem;">2. Vector Database</h4>
-            <p>The embeddings are stored in a vector database (such as Pinecone, Weaviate, or Qdrant) that enables fast similarity search. When a query comes in, the system can quickly find the most relevant document chunks.</p>
+            <h4>2. Vector Database</h4>
+            <p>The embeddings are stored in a vector database (such as 
+            Pinecone, Weaviate, or Qdrant) that enables fast similarity 
+            search. When a query comes in, the system can quickly find 
+            the most relevant document chunks.</p>
             
-            <h4 style="color: var(--primary-blue); margin-top: 1.5rem;">3. Retrieval</h4>
-            <p>When a user asks a question, the query is also converted to an embedding. The system then searches the vector database to find document chunks with similar embeddings—these are the most semantically relevant pieces of information.</p>
+            <h4>3. Retrieval</h4>
+            <p>When a user asks a question, the query is also converted 
+            to an embedding. The system then searches the vector database 
+            to find document chunks with similar embeddings—these are the 
+            most semantically relevant pieces of information.</p>
             
-            <h4 style="color: var(--primary-blue); margin-top: 1.5rem;">4. Generation</h4>
-            <p>The retrieved document chunks are combined with the user's question and sent to an LLM. The model generates a response based on both its general knowledge and the specific information from your documents.</p>
+            <h4>4. Generation</h4>
+            <p>The retrieved document chunks are combined with the user's 
+            question and sent to an LLM. The model generates a response 
+            based on both its general knowledge and the specific 
+            information from your documents.</p>
 
             <h3>Benefits for Enterprise</h3>
-            <p>RAG systems offer several advantages for enterprise applications:</p>
-            <ul style="margin-left: 2rem; margin-bottom: 1rem;">
-                <li><strong>No Model Training Required:</strong> You don't need to fine-tune or train custom models</li>
-                <li><strong>Easy Updates:</strong> Adding new documents is as simple as processing and indexing them</li>
-                <li><strong>Transparency:</strong> You can see which documents were used to generate each response</li>
-                <li><strong>Cost-Effective:</strong> Leverages existing LLMs without expensive custom training</li>
-                <li><strong>Scalable:</strong> Can handle large document collections efficiently</li>
+            <p>RAG systems offer several advantages for enterprise 
+            applications:</p>
+            <ul>
+                <li><strong>No Model Training Required:</strong> You don't 
+                need to fine-tune or train custom models</li>
+                <li><strong>Easy Updates:</strong> Adding new documents is 
+                as simple as processing and indexing them</li>
+                <li><strong>Transparency:</strong> You can see which 
+                documents were used to generate each response</li>
+                <li><strong>Cost-Effective:</strong> Leverages existing 
+                LLMs without expensive custom training</li>
+                <li><strong>Scalable:</strong> Can handle large document 
+                collections efficiently</li>
             </ul>
 
             <h3>Getting Started</h3>
-            <p>If you're interested in implementing a RAG system for your organization, here are the key decisions you'll need to make:</p>
-            <ul style="margin-left: 2rem; margin-bottom: 1rem;">
-                <li>Choose an embedding model (OpenAI, Cohere, or open-source options)</li>
-                <li>Select a vector database based on your scale and requirements</li>
-                <li>Decide on an LLM (cloud-based like GPT-4 or Claude, or local like Llama)</li>
+            <p>If you're interested in implementing a RAG system for your 
+            organization, here are the key decisions you'll need to 
+            make:</p>
+            <ul>
+                <li>Choose an embedding model (OpenAI, Cohere, or 
+                open-source options)</li>
+                <li>Select a vector database based on your scale and 
+                requirements</li>
+                <li>Decide on an LLM (cloud-based like GPT-4 or Claude, 
+                or local like Llama)</li>
                 <li>Design your document chunking strategy</li>
                 <li>Plan for security and access control</li>
             </ul>
 
-            <p>At eAIs, we specialize in designing and implementing RAG systems tailored to your specific needs. <a href="../about.html">Contact us</a> to learn how we can help you leverage your data with AI.</p>
+            <p>At eAIs, we specialize in designing and implementing RAG 
+            systems tailored to your specific needs. 
+            <a href="../about.html">Contact us</a> to learn how we can 
+            help you leverage your data with AI.</p>
         </section>
     </main>
 
